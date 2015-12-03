@@ -1,0 +1,19 @@
+define: test;
+
+@api: 
+  test 
+  test1 
+  test2;
+
+@hello: world;
+
+.header {
+
+  @api: true-top;
+
+  test: @test;
+  test1: @test1;
+  top: @test2;
+  bottom: @true-top;
+  test: @api;
+}
